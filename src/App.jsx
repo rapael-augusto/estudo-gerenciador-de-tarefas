@@ -13,6 +13,7 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
+  /*
   useEffect(() => {
     const fetchTasks = async () => {
       const response = await fetch(
@@ -28,7 +29,8 @@ function App() {
 
     fetchTasks();
   }, []);
-
+  */
+    
   function onTaskClick(taskId) {
     const newTasks = tasks.map((task) => {
       if (task.id === taskId) {
